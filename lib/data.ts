@@ -2,9 +2,9 @@
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import TS1 from "@/public/TS1.jpg"
+import AQ2 from "@/public/AQ2.jpg"
+import CA2 from "@/public/CA2.jpg"
 
 export const links = [
   {
@@ -60,29 +60,33 @@ export const links = [
 //   },
 // ] as const;
 
-// export const projectsData = [
-//   {
-//     title: "CorpComment",
-//     description:
-//       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-//     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-//     imageUrl: corpcommentImg,
-//   },
-//   {
-//     title: "rmtDev",
-//     description:
-//       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-//     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-//     imageUrl: rmtdevImg,
-//   },
-//   {
-//     title: "Word Analytics",
-//     description:
-//       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-//     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-//     imageUrl: wordanalyticsImg,
-//   },
-// ] as const;
+export const projectsData = [
+  {
+    title: "TaskSync",
+    description:
+      `A full-stack productivity tool where users can organize tasks, take notes, and schedule their upcoming events all at one place.
+      Integrated with Google API for seamless calendar sync. Unique project experience as I used React in frontend and Django for the backend.`,
+    tags: ["React", "Django", "Bootstrap", "PostgreSQL", "Google API"],
+    imageUrl: TS1,
+  },
+  {
+    title: "Air Quality Analysis",
+    description:
+      `A data analysis project focused on visualizing air quality metrics across different time periods in Delhi(infamous for its pollution).
+       I used Python libraries to generate some insightful charts and trends.`,
+    tags: ["Python", "pandas", "matplotlib", "seaborn"],
+    imageUrl: AQ2,
+  },
+  {
+    title: "Course Academy",
+    description:
+      `A simple online distance learning platform built with Vanilla HTML,CSS,JS.
+      I tried to make myself familiar with how to make a responsive websites building Course Academy.`,
+    tags: ["HTML", "CSS", "JavaScript", "FormSpreeAPI"],
+    imageUrl: CA2,
+  },
+] as const;
+
 
 export const skillsData = [
   "HTML",
