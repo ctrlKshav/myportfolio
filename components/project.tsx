@@ -7,7 +7,7 @@ import {useScroll} from 'framer-motion'
 
 type ProjectProps = (typeof projectsData)[number]
 
-export default function Project({title,description,tags,imageUrl} : ProjectProps){
+export default function Project({title,description,tags,imageUrl,projectUrl} : ProjectProps){
   
   const ref = useRef<HTMLDivElement>(null)
 
@@ -26,7 +26,8 @@ export default function Project({title,description,tags,imageUrl} : ProjectProps
       hover:bg-gray-200 transition rounded-lg'
      >
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col gap-2 h-full group-even:ml-[26rem]">
-          <h3 className='text-2xl font-semibold'>{title}</h3>
+          <a className='text-2xl font-semibold hover:scale-110 hover:translate-x-5'
+          href={projectUrl} target="_blank">{title}</a>
           <p className='my-2 leading-relaxed text-gray-700'>{description}</p>
           <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
             {tags.map((tag,index)=>

@@ -68,6 +68,8 @@ export const projectsData = [
       Integrated with Google API for seamless calendar sync. Unique project experience as I used React in frontend and Django for the backend.`,
     tags: ["React", "Django", "Bootstrap", "PostgreSQL", "Google API"],
     imageUrl: TS1,
+    projectUrl:"https://github.com/ctrlKshav/TaskSync",
+    
   },
   {
     title: "Air Quality Analysis",
@@ -76,6 +78,8 @@ export const projectsData = [
        I used Python libraries to generate some insightful charts and trends.`,
     tags: ["Python", "pandas", "matplotlib", "seaborn"],
     imageUrl: AQ2,
+    projectUrl:"https://github.com/ctrlKshav/AirQualityAnalysis",
+    
   },
   {
     title: "Course Academy",
@@ -84,6 +88,8 @@ export const projectsData = [
       I tried to make myself familiar with how to make a responsive websites building Course Academy.`,
     tags: ["HTML", "CSS", "JavaScript", "FormSpreeAPI"],
     imageUrl: CA2,
+    projectUrl:"https://github.com/ctrlKshav/CourseAcademy",
+    
   },
 ] as const;
 
