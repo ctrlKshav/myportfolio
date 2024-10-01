@@ -22,7 +22,8 @@ export default function Skills() {
            {skillsData.map((skill,index)=>
                 {
                 return( 
-                <motion.li className='min-w-24 bg-white text-gray-950 border border-black/15 rounded-lg px-5 py-3 text-center '
+                <motion.li className='min-w-24 bg-white text-gray-950 border border-black/15 rounded-lg px-5 py-3 text-center
+                dark:bg-white/10 dark:text-white '
                 variants={fadeInAnimationsVariants} initial="initial"  whileInView="animate"
                 viewport={{once:true}}
                 custom={index}
