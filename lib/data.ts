@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact,FaUniversity,FaLaptopCode } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import TS1 from "@/public/TS1.jpg"
 import AQ2 from "@/public/AQ2.jpg"
@@ -33,32 +33,41 @@ export const links = [
   },
 ] as const;
 
-// export const experiencesData = [
-//   {
-//     title: "Graduated bootcamp",
-//     location: "Miami, FL",
-//     description:
-//       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-//     icon: React.createElement(LuGraduationCap),
-//     date: "2019",
-//   },
-//   {
-//     title: "Front-End Developer",
-//     location: "Orlando, FL",
-//     description:
-//       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-//     icon: React.createElement(CgWorkAlt),
-//     date: "2019 - 2021",
-//   },
-//   {
-//     title: "Full-Stack Developer",
-//     location: "Houston, TX",
-//     description:
-//       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-//     icon: React.createElement(FaReact),
-//     date: "2021 - present",
-//   },
-// ] as const;
+export const experiencesData = [
+  {
+    title: "Completed HSC Board",
+    location: "Rajasthan School",
+    description:
+      "Successfully completed my higher secondary education, which helped me build a strong foundation in mathematics and computer science.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022",
+  },
+  {
+    title: "Third-Year Student",
+    location: "LJ University",
+    description:
+      "Currently pursuing my third year of studies at LJ University, focusing on Web Development and Data Science.",
+    icon: React.createElement(FaUniversity),
+    date: "2022 - present",
+  },
+  {
+    title: "Problem-Solver for Real-Life Scenario",
+    location: "Rajasthan",
+    description:
+      "Developed a custom software solution to help a relative manage their small business inventory, improving their workflow efficiency by 30%.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023",
+  },
+  {
+    title: "Hackathon Participant",
+    location: "LJ University Hackathon",
+    description:
+      "Created an online polling system during a hackathon, allowing real-time voting and analysis. My team made top 10 for innovative design and technical execution.",
+    icon: React.createElement(FaLaptopCode),
+    date: "2023",
+  },
+] as const;
+
 
 export const projectsData = [
   {

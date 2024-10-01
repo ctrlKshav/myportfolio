@@ -53,7 +53,7 @@ export default function Intro() {
           <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full
            outline-none  hover:scale-110  active:scale-105
           transition cursor-pointer
-          border border-black/10' href='https://drive.google.com/file/d/12wKg8dGpzr2eqybf5evU62vfVrACJxXR/view?usp=sharing'
+          borderBlack' href='https://drive.google.com/file/d/12wKg8dGpzr2eqybf5evU62vfVrACJxXR/view?usp=sharing'
           target='blank'>
             Resume 
             <FaExternalLinkAlt className='opacity-60 group-hover:translate-x-1 transition'/>
@@ -61,14 +61,14 @@ export default function Intro() {
 
           <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] outline-none  hover:scale-[1.15]  active:scale-[1.15]
           transition cursor-pointer hover:text-gray-950
-          border border-black/10'
+          borderBlack'
           href='https://www.linkedin.com/in/keshav3511/' target='_blank'>
             <BsLinkedin></BsLinkedin>
           </a>
 
           <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] outline-none  hover:scale-[1.15]  active:scale-[1.15]
           transition cursor-pointer hover:text-gray-950
-          border border-black/10'
+          borderBlack'
           href='https://github.com/ctrlKshav' target='_blank'>
             <BsGithub></BsGithub>
           </a>
