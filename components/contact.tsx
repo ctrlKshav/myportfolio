@@ -2,9 +2,11 @@
 import React from 'react'
 import SectionHeading from '@/components/section-heading'
 import { useSectionInView } from '@/lib/hooks'
-import { FaPaperPlane } from 'react-icons/fa';
-import {animate, motion} from 'framer-motion'
+import { motion} from 'framer-motion'
 import {sendEmail} from '@/actions/sendEmail'
+import { useFormStatus } from 'react-dom';
+import SubmitBtn from './submit-btn';
+import toast from 'react-hot-toast';
 
 
 export default function Contact() {
@@ -20,15 +22,18 @@ export default function Contact() {
         
         <form action={async (formData)=>{
             console.log('Client Side Action')
-            const response = await sendEmail(formData)
+            const {response,error} = await sendEmail(formData)
+            if(error){
+                toast.error(error);
+                return;
+            }
+            toast.success("Submitted Successfully")
         }} className='mt-10 flex flex-col'>
             <input type="email" className='h-14 rounded-lg border borderBlack px-4' placeholder="Enter Your email" required
             maxLength={200} name="senderemail" /> 
             <textarea  className='h-52 my-3 rounded-lg borderBlack p-4' placeholder='Your Message'
-            maxLength={600} required name="message"></textarea> 
-            <button type="submit" className='group h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all
-            flex items-center justify-center gap-2 active:scale-105 hover:scale-110'>Submit <FaPaperPlane className='text-xs opacity-70 transition-all
-            group-hover:translate-x-1 group-hover:-translate-y-1' /> </button>
+            maxLength={5000} required name="message"></textarea> 
+            <SubmitBtn />
 
         </form>
 
