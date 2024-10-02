@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "Completed HSC Board",
     location: "Rajasthan School",
     description:
-      "Successfully completed my higher secondary education, which helped me build a strong foundation in mathematics and computer science.",
+      "Successfully completed my higher secondary education, where I first found my interest in coding.",
     icon: React.createElement(LuGraduationCap),
     date: "2022",
   },
@@ -51,18 +51,18 @@ export const experiencesData = [
     date: "2022 - present",
   },
   {
-    title: "Problem-Solver for Real-Life Scenario",
-    location: "Rajasthan",
+    title: "Solved Real Life Problem",
+    location: "Ahmedabad",
     description:
-      "Developed a custom software solution to help a relative manage their small business inventory, improving their workflow efficiency by 30%.",
+      "Developed some macros for my relative to help them manage their local business, improving their workflow efficiency.",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
   {
     title: "Hackathon Participant",
-    location: "LJ University Hackathon",
+    location: "Tic-Tech-Toe Hackathon(DAIICT)",
     description:
-      "Created an online polling system during a hackathon, allowing real-time voting and analysis. My team made top 10 for innovative design and technical execution.",
+      "Created an online polling and surveying system in the hackathon. We didn't win but we got appreciated for our concept of work and presentation",
     icon: React.createElement(FaLaptopCode),
     date: "2023",
   },
