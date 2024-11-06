@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import TS1 from "@/public/TS1.jpg"
 import AQ2 from "@/public/AQ2.jpg"
 import CA2 from "@/public/CA2.jpg"
+import JA1 from "@/public/JA1.png"
 
 export const links = [
   {
@@ -35,10 +36,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Completed HSC Board",
+    title: "Passed HSC Exam",
     location: "Rajasthan School",
     description:
-      "Successfully completed my higher secondary education, where I first found my interest in coding.",
+      "Completed my higher secondary education, where I first found my interest in coding.",
     icon: React.createElement(LuGraduationCap),
     date: "2022",
   },
@@ -48,7 +49,7 @@ export const experiencesData = [
     description:
       "Currently pursuing my third year of studies at LJ University, focusing on Web Development and Data Science.",
     icon: React.createElement(FaUniversity),
-    date: "2022 - present",
+    date: "2022 - Present",
   },
   {
     title: "Solved Real Life Problem",
@@ -70,12 +71,22 @@ export const experiencesData = [
 
 
 export const projectsData = [
+
+  {
+    title: "JustAsk",
+    description:
+      `JustAsk is my RAG Based PDF Querying System. Users can upload a PDF and ask questions about its content, using natural language processing to extract accurate answers.`,
+    tags: ["React", "FastAPI", "Tailwind CSS", "Langchain", "Gemini API","Docker"],
+    imageUrl: JA1,
+    projectUrl:"https://github.com/ctrlKshav/JustAsk",
+    
+  },
   {
     title: "TaskSync",
     description:
       `A full-stack productivity tool where users can organize tasks, take notes, and schedule their upcoming events all at one place.
       Integrated with Google API for seamless calendar sync. Unique project experience as I used React in frontend and Django for the backend.`,
-    tags: ["React", "Django", "Bootstrap", "PostgreSQL", "Google API"],
+    tags: ["React", "Django", "Bootstrap", "PostgreSQL", "Google API","Docker","AWS"],
     imageUrl: TS1,
     projectUrl:"https://github.com/ctrlKshav/TaskSync",
     
@@ -113,10 +124,12 @@ export const skillsData = [
   "Node.js",
   "Express",
   "MongoDB",
-  "Framer Motion",
   "Tailwind",
   "PostgreSQL",
-  "Python",
   "Django",
-  "Git",
+  "FastAPI",
+  "Python",
+  "Docker",
+  "AWS",
+  "Langchain"
 ] as const;

@@ -33,9 +33,9 @@ export default function Intro() {
 
         <span className="font-bold">Hey there, Keshav this side.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> on weekdays and a{" "}
-        <span className="font-bold">full-slack developer</span> on weekends. I like doing <span className="italic">cool internet stuff</span>.
-        Usually I work with {" "}
-        <span className="underline">React (Next.js)</span> to create functional and responsive Web Apps.
+        <span className="font-bold">full-slack developer</span> on weekends. I like creating{" "}
+        <span className="underline">functional</span> and <span className="underline">responsive</span> websites.{" "}
+        I specialize in the MERN stack and Django web framework.
 
 
         </motion.p>
@@ -53,7 +53,7 @@ export default function Intro() {
           <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full
            outline-none  hover:scale-110  active:scale-105
           transition cursor-pointer
-          borderBlack dark:bg-white/10' href='https://drive.google.com/file/d/12wKg8dGpzr2eqybf5evU62vfVrACJxXR/view?usp=sharing'
+          borderBlack dark:bg-white/10' href='https://drive.google.com/file/d/1M4RJG-D6Qqwf2rtAKTtGBiMCJddKe7-j/view?usp=sharing'
           target='blank'>
             Resume 
             <FaExternalLinkAlt className='opacity-60 group-hover:translate-x-1 transition'/>
